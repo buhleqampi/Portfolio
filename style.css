@@ -12,29 +12,31 @@ color: black;
 
 .media {
     padding: 20px 20px;
-    font-size: 80px;
+    font-size: 16px;
     width: 50px;
     margin: 10px 30px;
-    display: inline-block;
-
+    color: black;
 }
-
+#projects {
+    min-height: 50vw;
+}
 .icons {
 list-style-type: none;
 position: fixed;
-transform: translateY(-30%);
 margin-top: 160px;
-right:50px;
 }
 
 .LandingPage {
     text-align: center;
-    font-size: 300px;
-    margin-top: 300px;
+    /*font-size: 300px;*/
+    margin-top: 220px;
     padding: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 190px;
 }
-
+/* Footer Section*/
+.footer{
+    padding: 18px 20px;
+}
 /*@keyframes example {
     from{background-color:whitesmoke;}
     to{background-color: purple;}
@@ -50,7 +52,8 @@ right:50px;
 body {
     background-color: pink;
     font-family: 'Times New Roman', Times, serif;
-    color: whitesmoke;
+    color: gray;
+    /* overflow-y: hidden; */
     
 }
 h2 {
@@ -59,36 +62,56 @@ h2 {
     margin-top: 5px;
 
 }
-img {
+.col img {
     padding: 20px;
-    width: 100px;
+    width: 300px;
+    margin-left: 2px;
+    
 }
 .me {
     display: flex;
 }
 .carousel slide {
-    width: 100px;
+    width: 100px
 }
 
-.card-container {
-    position: relative;
-    perspective: 1000px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    font-size: larger;
+/* media query*/    
+@media screen and (min-width: 300px) {
+    .container {
+        width: 50vw;
+        flex-flow: column wrap;
+    }
+    .container img {
+        width: 100%;
 
+        
+    }
+}
+@media screen and (min-width: 576px) {
+    .container {
+        width: 50vw;
+        flex-flow: column wrap;
+    }
+    .container img {
+        width: 100%;
 
+        
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 50vw;
+        flex-flow: column wrap;
+    }
+    .container img {
+        width: 100%;
+
+        
+    }
 }
 
-.front,
-.back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform .8s ease;
-} 
+.noname {
+    font-size: 32px;
+    padding: 2px;
+
+}

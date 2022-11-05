@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buhle's portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -19,11 +18,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Buhle's portfolio</title>
+
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Buhle's Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,262 +34,353 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Ab">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Ed">Education</a>
+              <a class="nav-link" href="#education"> Work & Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Pro">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Con">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Test">Testimonials</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+
     <div class="LandingPage">
-      <h1 class="text-white text-center mt-2">Hi,my name is Buhle Qampi</h1>
-    </div>
-
-
-
-
-
-    <div class="media">
-      <ul class="icons">
-        <li class="icon"><a class="social" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        <li class="icon"><a class="social" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-        <li class="icon"><a class="social" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-        <li class="icon"><a class="social" href="#"><i class="fa-brands fa-github"></i></a></li>
-      </ul>
+      <h1 class="text-white text-center mb-4">WELCOME,my name is Buhle Qampi</h1>
+      <a href="#about">
+        <button type="button" class="btn btn-lg btn-outline-dark btn-outline-secondary rounded-pill mb-5">See
+          more</button>
+      </a>
     </div>
   </header>
 
 
   <main>
-    <section class="About" id="Ab">
-      <h2>About</h2>
+    <section class="About mt-5" id="about">
+      <h2 class="display-2 d-flex justify-content-center p-5 text-white pb-10">About</h2>
       <div class="container bg-primary ">
-        <div class="row d-flex flex-column flex-md-row">
+        <div class="row d-flex flex-column flex-md-row justify-content-center">
           <div class="col">
-            <img src="./Assets/Buhle.jpg" alt="pic">
+            <img src="./Assets/BuhleQ.JPG" alt="pic">
           </div>
           <div class="col">
-            <p class="lead">An aspiring fullstack developer.Attentive to detail,neat code and great details. Good team
-              player and great communication skills. I am always improving and adapting to the latest technologies.</p>
+            <p class="lead text-black">An aspiring full stack web developer. I love tackling new challenges and
+              performing to
+              the best of my ability. and I am a team-player who works well with collegues and shares innovative ideas.
+              I am always improving and adapting to the latest technologies,as I always upskill the skills I already
+              have.</p>
+            <p class="lead text-black">I possess great communication and always adapts easily to any workplace and its
+              culture. I appreciate good critisism that builds you and improves you as a developer.</p>
+            <p class="lead text-black">I have a student mentality and that attribute is very important in this line of
+              work.
+              Lastly I respect my fellow co-workers and address the management anytime I may need assistance.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="Education" id="Ed">
-      <h2>Education</h2>
-      <h4>2022</h4>
-      <img src="./Assets/lifechoices.jpg" alt="pic">
+    <section class="Education" id="education">
+      <div class="cone px-5">
+        <div class="row">
+          <h2 class="d-flex justify-content-center mt-5 p-5 text-white pb-2">Work & Education</h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6" style="overflow: hidden;">
+            <div class="heading text-white">
+              <h3>My Education</h3>
+            </div>
+            <div data-aos="fade-up-right" class="bg-primary rounded p-4 my-4" style="height: 40vh;">
+              <p class="bg-danger fw-400 text-white px-2" style="width: fit-content">2022-2023</p>
+              <h3 class="text-white">Web development bootcamp</h3>
+              <p class="text-danger">Life Choices Academy</p>
+              <p class="text-black">12-month coding bootcamp that has 6-months coursework and 6-months internship.</p>
+            </div>
+            <div data-aos="fade-up-right" class="bg-primary rounded p-4 my-4" style="height: 40vh;">
+              <p class="bg-danger fw-400 text-white px-2" style="width: fit-content">2020-2021</p>
+              <h3 class="text-white">BCom Economic Sciences</h3>
+              <p class="text-danger">Stellenbosch University</p>
+              <p class="text-black">3 year tertiary qualification that enables to be an economist.(Incomplete)</p>
+            </div>
+          </div>
+          <div class="col-lg-6" style="overflow: hidden;">
+            <div class="heading text-white">
+              <h3>My Work</h3>
+            </div>
+            <div data-aos="fade-up-right" class="bg-primary rounded p-4 my-4" style="height: 40vh;">
+              <p class="bg-danger fw-400 text-white px-2" style="width: fit-content">2018-current</p>
+              <h3 class="text-white">High School Tutor</h3>
+              <p class="text-danger">Ikamva Youth</p>
+              <p class="text-black">Help to address SA's low matric rate by tutoring high school pupils.</p>
+            </div>
+            <div data-aos="fade-up-right" class="bg-primary rounded p-4 my-4" style="height: 40vh;">
+              <p class="bg-danger fw-400 text-white px-2" style="width: fit-content">2022</p>
+              <h3 class="text-white">General worker</h3>
+              <p class="text-danger">Affirmative Project</p>
+              <p class="text-black">1 month contract of festive cleaning.</p>
+            </div>
+          </div>
+    </section>
 
-      <h4>2020-2021</h4>
-      <img src="./Assets/stellies.jpeg" alt="pic">
-
-      <h4>2013-2017</h4>
-      <h5>Fezeka Senior Secondary School</h5>
-      </section>
-
-
-        <section class=" Projects" id="Pro">
-      <h2>Projects</h2>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!---Projects-->
+    <div class=" Projects" id="projects">
+      <h2 class="d-flex justify-content-center mt-5 p-5 text-white pb-10">Projects</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 my-4">
+            <img src="./Assets/work1.png" class="card-img-top" alt="top">
+            <div class="card-body bg-primary">
+              <h5 class="card-title text-black">Netflix website</h5>
+              <p class="card-text text-black">Created my first website using HTML and bits of CSS</p>
+              <a href="https://github.com/buhleqampi/Netflix-website.git" target="_blank"
+                class="btn btn-primary">Github</a>
+              <a href="https://buhleqampi-netflix-site.netlify.app/" target="_blank" class="btn btn-primary">Netlify</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 my-4">
+            <img src="./Assets/work2.png" class="card-img-top" alt="top">
+            <div class="card-body bg-primary">
+              <h5 class="card-title text-black">E-commerce website</h5>
+              <p class="card-text text-black">Created my first website with Bootstrap</p>
+              <a href="https://github.com/buhleqampi/Ecommerce.git" target="_blank" class="btn btn-primary">Github </a>
+              <a href="https://buhleqampi-ecommerce-site.netlify.app/" target="_blank"
+                class="btn btn-primary">Netlify</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h4 class="d-flex justify-content-center mt-5 p-5 text-white pb-10"> My skills</h4>
+      <div class="row mt-3">
+        <h4 class="text-white"></h4>
+        <div class="col-lg-6">
+          <div class="languages d-flex">
+            <p class="text-light mt-3">HTML</p>
+            <p class="text-light mt-3">95%</p>
+          </div>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="languages d-flex">
+            <p class="text-light mt-3">CSS</p>
+            <p class="text-light mt-3">70%</p>
+          </div>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="languages d-flex">
+            <p class="text-light mt-3">Bootstrap</p>
+            <p class="text-light mt-3">80%</p>
+          </div>
+          <div class="progress mb-5" style="height: 10px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="languages d-flex">
+            <p class="text-light mt-3">JavaScript</p>
+            <p class="text-light mt-3">5%</p>
+          </div>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+          <div class="languages d-flex">
+            <p class="text-light mt-3">Python</p>
+            <p class="text-light mt-3">5%</p>
+          </div>
+          <div class="progress" style="height: 10px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+          <div class="languages d-flex">
+            <p class="text-light mt-3">Microsoft Office</p>
+            <p class="text-light mt-3">100%</p>
+          </div>
+          <div class="progress mb-5" style="height: 10px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="mb-4 text-center">
+          <a href="./Assets/Buhle Qampi CV.pdf" download="">
+            <button type="button" class="btn btn-outline-secondary btn-lg rounded-pill">Download CV <i
+                class="fa-solid fa-download"></i></button>
+          </a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <h2>Skiills</h2>
-      <div class="progress mt-3">
-        <div class="progress-bar mt-2" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar mt-2" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar mt-2" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-          </section>
+    </div>
+    </section>
 
 
 
-    <section class="Testimonials" id="Test">
-      <h2>Testimonials</h2>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+
+
+
+    <section id="testimonial" class="container text center bg-gradient">
+      <h2 class="display-2"><strong>Testimonials</strong></h2>
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="card-cointainer">
-              <div class="front">
-                <img src="/Assets/Lebo.jpg" class="d-block w-50 mx-auto" alt="lebo">
+            <div class="card" style="width: 18rem; margin: auto;">
+              <img src="./Assets/Lebo.jpg" class="card-img-top img-fluid image" alt="card">
+              <div class="card-body">
+                <h4 class="display-4">Kelebogile Nobomvu</h4>
+                <p class="card-text text-danger">Buhle is a sweet and loving soul. She is a hard worker and once she
+                  puts her mind to something she gets
+                  it done.</p>
               </div>
-              <div class="back">
-                <p></p>
-                </div>
-                </div>
-                </div>
-            <div class="carousel-item">
-            <img src="./Assets/Thoko.jpg" class="d-block w-50 mx-auto" alt="thoko">
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./Assets/Siba.jpg" class="d-block w-50 mx-auto" alt="siba">
+            <div class="card" style="width: 18rem; margin: auto;">
+              <img src="./Assets/Candice.jpg" class="card-img-top img-fluid image" alt="card">
+              <div class="card-body">
+                <h5 class="display-5">Candice Amon</h5>
+                <p class="card-text text-danger">Buhle is a very kind hearted person.
+                  Always ready to extend a helping hand and also knows when to ask for help. She believes in being a
+                  positive role model to those who look up to her and carries herself very well. A key value she holds
+                  dear
+                  is Respect.</p>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./Assets/Sindile.JPG" class="d-block w-50 mx-auto" alt="sindile">
+            <div class="card" style="width:18rem; margin: auto;">
+              <img src="./Assets/Thoko.jpg" class="card-img-top img-fluid image" alt="card">
+              <div class="card-body">
+                <h5 class="display-5">Thokozani Nqwili</h5>
+                <p class="card-text text-danger">Buhle is a very dedicated individual with a positive mind set. She
+                  works well with people and she has the
+                  ability to think out of the box.</p>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./Assets/Uzu.jpg" class="d-block w-50 mx-auto" alt="uzu">
+            <div class="card" style="width: 18rem; margin: auto;">
+              <img src="./Assets/Siba.jpg" class="card-img-top img-fluid image" alt="card">
+              <div class="card-body">
+                <h5 class="display-5">Sibabalwe Mafestire</h5>
+                <p class="card-text text-danger">Buhle is a dedicated individual who puts her all in her work and a good
+                  team player, good at planning and
+                  meeting deadlines</p>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./Assets/Candice.jpg" class="d-block w-50 mx-auto" alt="candice">
+            <div class="card" style="width: 18rem; margin: auto;">
+              <img src="./Assets/Sindile.JPG" class="card-img-top img image" alt="card">
+              <div class="card-body">
+                <h5 class="display-5">Sindile Kula</h5>
+                <p class="card-text text-danger">Buhle is a bright young lady who is incredibly ambitious and
+                  laser-focused on her life goals.
+                  She has a fantastic memory and picks things up really quickly.
+                  She is a person who puts a lot of effort into whatever she does and tries her absolute best.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-      <!---<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-
-          
-          
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./Assets/Lebo.jpg" class="d-block w-50 mx-auto" alt="lebo">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Kelebogile Nobomvu</h5>
-              <p>Buhle is a sweet and loving soul. She is a hard worker and once she puts her mind to something she gets it done.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./Assets/Thoko.jpg" class="d-block w-50 mx-auto" alt="thoko">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Thokozani Nqwili</h5>
-              <p>Buhle is a very dedicated individual with a positive mind set. She works well with people and she has the ability to think out of the box.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./Assets/Siba.jpg" class="d-block w-50 mx-auto" alt="siba">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Sibabalwe Mafestire</h5>
-              <p>Buhle is a dedicated individual who puts her all in her work and a good team player, good at planning and meeting deadlines</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./Assets/Sindile.JPG" class="d-block w-50 mx-auto" alt="sindile">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Sindile Kula</h5>
-              <p>Buhle is a bright young lady who is incredibly ambitious and laser-focused on her life goals.
-             She has a fantastic memory and picks things up really quickly. 
-             She is a person who puts a lot of effort into whatever she does and tries her absolute best.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./Assets/Uzu.jpg" class="d-block w-50 mx-auto" alt="uzu">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Uzukhanye Dywili</h5>
-              <p>Hardworking,loving,confident, caring,full of life are words that best describes Buhle.
-                A friend who motivates you to become the best version of yourself.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./Assets/Candice.jpg" class="d-block w-50 mx-auto" alt="candice">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Candice Amon</h5>
-              <p>Buhle is a very kind hearted person.
-            Always ready to extend a helping hand and also knows when to ask for help. She believes in being a positive role model to those who look up to her and carries herself very well. A key value she holds dear is Respect.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>-->
     </section>
 
-    <section class="Contact" id="Con">
-      <h2>Contact</h2>
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Full name</label>
-          <input type="full name" class="form-control" id="exampleInputfullname1" aria-describedby="fullnameHelp">
-          <div id="fullnameHelp" class="form-text"></div>
+    <section id="contact">
+      <div class="container px-5">
+        <div class="row" style="height: 100%;">
+          <h2 class="d-flex justify-content-center mt-5 text-white">Contact me</h2>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <div class="row mt-5">
+          <div class="col-lg-4 my-2">
+            <h4 class="text-white my-4">Address</h4>
+            <div class="row text-light mt-4">
+              <div class="icon text-danger">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <p>22 Jacob Street</p>
+              <p>Nyanga</p>
+              <p>7750</p>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="phone d-flex flex-row">
+              <div class="icon text-danger">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <p class="text-light ms-3">(065) 559 8353</p>
+            </div>
+            <div class="mobile d-flex flex-row">
+              <div class="icon text-danger">
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <p class="text-light ms-3">(063) 063 0263</p>
+            </div>
+            <div class="email d-flex flex-row">
+              <div class="icon text-danger">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <p class="text-light ms-3">buhle3857@gmail.com</p>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputmessage1" class="form-label">Message</label>
-          <input type="message" class="form-control" id="exampleInputmessage1">
+        <div class="col-lg-8">
+          <h4 class="text-white my-4">Send us a note</h4>
+          <form target="_blank" action="https://formspree.io/f/xqknwllo" method="POST">
+            <div class="row mt-4">
+              <div class="col-lg-6 my-3 shadow">
+                <input required type="text" name="name" class="form-control bg-dark text-white" id="name"
+                  placeholder="Name" style="height: 50px;">
+              </div>
+              <div class="col-lg-6 my-3 shadow">
+                <input required type="email" name="email" class="form-control bg-dark text-white" id="email"
+                  placeholder="Email" style="height: 50px;">
+              </div>
+              <div class="mt-4 shadow">
+                <textarea id="message" class="form-control bg-dark text-white"
+                  placeholder="Tell us more about your needs...." style="height: 200px;"></textarea>
+              </div>
+              <div class="my-4 text-center">
+                <button type="submit" class="btn btn-lg btn-danger btn-outline-secondary rounded-pill">Send
+                  message</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </section>
+      </div>
+      </div>
   </main>
-  <footer>
+  <footer class="footer d-flex flex-wrap align-items-center mt-5 bg-light py-4 fixed-bottom border-top">
+    <div class="col-md-8">
+      &copy; Copyright 2022 | All Rights Reserved.
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.instagram.com/gingerqamps/" class="noname" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/buhle-qampi-293140158/" class="noname" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/buhle.qampi/" class="noname" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+    </div>
   </footer>
 </body>
 
